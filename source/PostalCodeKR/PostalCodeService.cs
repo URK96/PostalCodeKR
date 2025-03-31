@@ -77,13 +77,6 @@ public class PostalCodeService
 
         foreach (XmlNode itemNode in itemNodes)
         {
-            XmlElement postalCodeElement = itemNode[XmlConstant.PostalCodeNodeName];
-            string postalCode = postalCodeElement.InnerText;
-            XmlElement roadNameAddressElement = itemNode[XmlConstant.RoadNumberAddressNodeName];
-            string roadNameAddress = roadNameAddressElement.InnerText;
-            XmlElement lotNumberAddressElement = itemNode[XmlConstant.LotNumberAddressNodeName];
-            string lotNumberAddress = lotNumberAddressElement.InnerText;
-
             resultDatas.Add(new AddressPostalCodeData
             {
                 PostalCode = GetXmlInnerText(itemNode, XmlConstant.PostalCodeNodeName),
