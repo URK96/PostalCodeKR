@@ -1,6 +1,6 @@
 namespace PostalCodeKR.Constants;
 
-public class XmlConstant
+internal class XmlConstant
 {
     public const string CommonDataNodeName = "cmmMsgHeader";
     public const string SuccessYesNoNodeName = "successYN";

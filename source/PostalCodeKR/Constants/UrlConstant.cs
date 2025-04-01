@@ -1,6 +1,6 @@
 namespace PostalCodeKR.Constants;
 
-public class UrlConstant
+internal class UrlConstant
 {
     public const string RequestUrl = "openapi.epost.go.kr/postal/retrieveNewAdressAreaCdSearchAllService/retrieveNewAdressAreaCdSearchAllService/getNewAddressListAreaCdSearchAll";
     public const string ServiceKeyQueryPoint = "ServiceKey";
