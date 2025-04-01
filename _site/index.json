@@ -1,0 +1,57 @@
+{
+  "README.html": {
+    "href": "README.html",
+    "title": "PostalCodeKR (한국 우편번호 / 주소 검색 라이브러리리) | PostalCodeKR API",
+    "summary": "PostalCodeKR (한국 우편번호 / 주소 검색 라이브러리리) Republic of Korea Postal code search library 대한민국의 우편번호 / 주소 검색 라이브러리 About Library (라이브러리에 대해) This library is C# implementation of 'Postal Number Information' open API service 본 라이브러리는 대한민국 공공데이터포털에서 제공하고 있는 '과학기술정보통신부 우정사업본부_우편번호 정보조회' 서비스의 C# 구현본입니다. Usage (사용법) Warning Get API key before use this library 라이브러리 사용 전 API Key를 가져와야 합니다. Use static method (정적 함수 사용시) Use PostalCodeSerivce.GetDatas async method PostalCodeService.GetDatas 비동기 함수를 사용하세요 ServiceResponseData result = await PostalCodeService.GetDatas(ServiceKey, \"관악구\", 10, 1);"
+  },
+  "api/PostalCodeKR.Constants.UrlConstant.html": {
+    "href": "api/PostalCodeKR.Constants.UrlConstant.html",
+    "title": "Class UrlConstant | PostalCodeKR API",
+    "summary": "Class UrlConstant Namespace PostalCodeKR.Constants Assembly PostalCodeKR.dll public class UrlConstant Inheritance object UrlConstant Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields CountPerPageQueryPoint public const string CountPerPageQueryPoint = \"countPerPage\" Field Value string CurrentPageQueryPoint public const string CurrentPageQueryPoint = \"currentPage\" Field Value string RequestUrl public const string RequestUrl = \"openapi.epost.go.kr/postal/retrieveNewAdressAreaCdSearchAllService/retrieveNewAdressAreaCdSearchAllService/getNewAddressListAreaCdSearchAll\" Field Value string SearchKeywordQueryPoint public const string SearchKeywordQueryPoint = \"srchwrd\" Field Value string ServiceKeyQueryPoint public const string ServiceKeyQueryPoint = \"ServiceKey\" Field Value string"
+  },
+  "api/PostalCodeKR.Constants.XmlConstant.html": {
+    "href": "api/PostalCodeKR.Constants.XmlConstant.html",
+    "title": "Class XmlConstant | PostalCodeKR API",
+    "summary": "Class XmlConstant Namespace PostalCodeKR.Constants Assembly PostalCodeKR.dll public class XmlConstant Inheritance object XmlConstant Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Fields CommonDataNodeName public const string CommonDataNodeName = \"cmmMsgHeader\" Field Value string CurrentPageNodeName public const string CurrentPageNodeName = \"currentPage\" Field Value string ItemCountPerPageNodeName public const string ItemCountPerPageNodeName = \"countPerPage\" Field Value string LotNumberAddressNodeName public const string LotNumberAddressNodeName = \"rnAdres\" Field Value string PostalCodeNodeName public const string PostalCodeNodeName = \"zipNo\" Field Value string RoadNumberAddressNodeName public const string RoadNumberAddressNodeName = \"lnmAdres\" Field Value string SearchResultListNodeName public const string SearchResultListNodeName = \"newAddressListAreaCdSearchAll\" Field Value string SuccessYesNoNodeName public const string SuccessYesNoNodeName = \"successYN\" Field Value string TotalItemCountNodeName public const string TotalItemCountNodeName = \"totalCount\" Field Value string TotalPageCountNodeName public const string TotalPageCountNodeName = \"totalPage\" Field Value string"
+  },
+  "api/PostalCodeKR.Constants.html": {
+    "href": "api/PostalCodeKR.Constants.html",
+    "title": "Namespace PostalCodeKR.Constants | PostalCodeKR API",
+    "summary": "Namespace PostalCodeKR.Constants Classes UrlConstant XmlConstant"
+  },
+  "api/PostalCodeKR.Models.AddressPostalCodeData.html": {
+    "href": "api/PostalCodeKR.Models.AddressPostalCodeData.html",
+    "title": "Class AddressPostalCodeData | PostalCodeKR API",
+    "summary": "Class AddressPostalCodeData Namespace PostalCodeKR.Models Assembly PostalCodeKR.dll public record AddressPostalCodeData : IEquatable<AddressPostalCodeData> Inheritance object AddressPostalCodeData Implements IEquatable<AddressPostalCodeData> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties LotNumberAddress Lot number address (지번 주소) public string LotNumberAddress { get; init; } Property Value string PostalCode Postal code (Zip code) of target address (우편 번호) public string PostalCode { get; init; } Property Value string RoadNumberAddress Road number address (도로명 주소) public string RoadNumberAddress { get; init; } Property Value string"
+  },
+  "api/PostalCodeKR.Models.ServiceResponseData.html": {
+    "href": "api/PostalCodeKR.Models.ServiceResponseData.html",
+    "title": "Class ServiceResponseData | PostalCodeKR API",
+    "summary": "Class ServiceResponseData Namespace PostalCodeKR.Models Assembly PostalCodeKR.dll Response data class about API service request public record ServiceResponseData : IEquatable<ServiceResponseData> Inheritance object ServiceResponseData Implements IEquatable<ServiceResponseData> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties CurrentPage Current page number public int CurrentPage { get; init; } Property Value int ItemCountPerPage Requested item count per page public int ItemCountPerPage { get; init; } Property Value int SearchResults Search result list (read-only) public IReadOnlyList<AddressPostalCodeData> SearchResults { get; init; } Property Value IReadOnlyList<AddressPostalCodeData> ServiceRequestSuccess Success information of API service request process public bool ServiceRequestSuccess { get; init; } Property Value bool TotalItemCount All page total item count of search result public int TotalItemCount { get; init; } Property Value int TotalPageCount Total page count public int TotalPageCount { get; init; } Property Value int"
+  },
+  "api/PostalCodeKR.Models.html": {
+    "href": "api/PostalCodeKR.Models.html",
+    "title": "Namespace PostalCodeKR.Models | PostalCodeKR API",
+    "summary": "Namespace PostalCodeKR.Models Classes AddressPostalCodeData ServiceResponseData Response data class about API service request"
+  },
+  "api/PostalCodeKR.PostalCodeService.html": {
+    "href": "api/PostalCodeKR.PostalCodeService.html",
+    "title": "Class PostalCodeService | PostalCodeKR API",
+    "summary": "Class PostalCodeService Namespace PostalCodeKR Assembly PostalCodeKR.dll public class PostalCodeService Inheritance object PostalCodeService Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors PostalCodeService(string) public PostalCodeService(string apiKey) Parameters apiKey string Properties APIServiceKey public string APIServiceKey { set; } Property Value string Methods GetDatas(string, string, int, int) public static Task<ServiceResponseData> GetDatas(string serviceKey, string searchKeyword, int queryItemCount, int queryPageNumber) Parameters serviceKey string searchKeyword string queryItemCount int queryPageNumber int Returns Task<ServiceResponseData>"
+  },
+  "api/PostalCodeKR.html": {
+    "href": "api/PostalCodeKR.html",
+    "title": "Namespace PostalCodeKR | PostalCodeKR API",
+    "summary": "Namespace PostalCodeKR Classes PostalCodeService"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | PostalCodeKR API",
+    "summary": "Getting Started Download NuGet package to use this library dotnet add package PostalCodeKR Before use library, you must request API Key on API provider site Go to site (KR) Go to site (EN)"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | PostalCodeKR API",
+    "summary": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}

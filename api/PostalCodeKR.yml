@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR
+  commentId: N:PostalCodeKR
+  id: PostalCodeKR
+  children:
+  - PostalCodeKR.PostalCodeService
+  langs:
+  - csharp
+  - vb
+  name: PostalCodeKR
+  nameWithType: PostalCodeKR
+  fullName: PostalCodeKR
+  type: Namespace
+  assemblies:
+  - PostalCodeKR
+references:
+- uid: PostalCodeKR.PostalCodeService
+  commentId: T:PostalCodeKR.PostalCodeService
+  href: PostalCodeKR.PostalCodeService.html
+  name: PostalCodeService
+  nameWithType: PostalCodeService
+  fullName: PostalCodeKR.PostalCodeService

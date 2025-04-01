@@ -1,0 +1,20 @@
+### YamlMime:TableOfContent
+items:
+- uid: PostalCodeKR
+  name: PostalCodeKR
+  type: Namespace
+  items:
+  - uid: PostalCodeKR.PostalCodeService
+    name: PostalCodeService
+    type: Class
+- uid: PostalCodeKR.Models
+  name: PostalCodeKR.Models
+  type: Namespace
+  items:
+  - uid: PostalCodeKR.Models.AddressPostalCodeData
+    name: AddressPostalCodeData
+    type: Class
+  - uid: PostalCodeKR.Models.ServiceResponseData
+    name: ServiceResponseData
+    type: Class
+memberLayout: SamePage

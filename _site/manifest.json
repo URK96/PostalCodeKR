@@ -1,0 +1,200 @@
+{
+  "source_base_path": "C:/Users/chlwl.URK96/source/repos/PostalCodeKR",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "README.md",
+      "output": {
+        ".html": {
+          "relative_path": "README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Constants.UrlConstant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Constants.UrlConstant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Constants.UrlConstant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Constants.XmlConstant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Constants.XmlConstant.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Constants.XmlConstant",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Constants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Constants.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Constants",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Models.AddressPostalCodeData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Models.AddressPostalCodeData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Models.AddressPostalCodeData",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Models.ServiceResponseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Models.ServiceResponseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Models.ServiceResponseData",
+      "Summary": "<p sourcefile=\"api/PostalCodeKR.Models.ServiceResponseData.yml\" sourcestartlinenumber=\"1\">Response data class about API service request</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Models.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Models",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.PostalCodeService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.PostalCodeService.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.PostalCodeService",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

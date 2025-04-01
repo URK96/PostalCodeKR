@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Constants
+  commentId: N:PostalCodeKR.Constants
+  id: PostalCodeKR.Constants
+  children:
+  - PostalCodeKR.Constants.UrlConstant
+  - PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: PostalCodeKR.Constants
+  nameWithType: PostalCodeKR.Constants
+  fullName: PostalCodeKR.Constants
+  type: Namespace
+  assemblies:
+  - PostalCodeKR
+references:
+- uid: PostalCodeKR.Constants.UrlConstant
+  commentId: T:PostalCodeKR.Constants.UrlConstant
+  href: PostalCodeKR.Constants.UrlConstant.html
+  name: UrlConstant
+  nameWithType: UrlConstant
+  fullName: PostalCodeKR.Constants.UrlConstant
+- uid: PostalCodeKR.Constants.XmlConstant
+  commentId: T:PostalCodeKR.Constants.XmlConstant
+  href: PostalCodeKR.Constants.XmlConstant.html
+  name: XmlConstant
+  nameWithType: XmlConstant
+  fullName: PostalCodeKR.Constants.XmlConstant

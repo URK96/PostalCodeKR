@@ -1,0 +1,486 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Models.AddressPostalCodeData
+  commentId: T:PostalCodeKR.Models.AddressPostalCodeData
+  id: AddressPostalCodeData
+  parent: PostalCodeKR.Models
+  children:
+  - PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress
+  - PostalCodeKR.Models.AddressPostalCodeData.PostalCode
+  - PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress
+  langs:
+  - csharp
+  - vb
+  name: AddressPostalCodeData
+  nameWithType: AddressPostalCodeData
+  fullName: PostalCodeKR.Models.AddressPostalCodeData
+  type: Class
+  source:
+    remote:
+      path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: AddressPostalCodeData
+    path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+    startLine: 5
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Models
+  syntax:
+    content: 'public record AddressPostalCodeData : IEquatable<AddressPostalCodeData>'
+    content.vb: Public Class AddressPostalCodeData Implements IEquatable(Of AddressPostalCodeData)
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{PostalCodeKR.Models.AddressPostalCodeData}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: PostalCodeKR.Models.AddressPostalCodeData.PostalCode
+  commentId: P:PostalCodeKR.Models.AddressPostalCodeData.PostalCode
+  id: PostalCode
+  parent: PostalCodeKR.Models.AddressPostalCodeData
+  langs:
+  - csharp
+  - vb
+  name: PostalCode
+  nameWithType: AddressPostalCodeData.PostalCode
+  fullName: PostalCodeKR.Models.AddressPostalCodeData.PostalCode
+  type: Property
+  source:
+    remote:
+      path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: PostalCode
+    path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+    startLine: 10
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Models
+  summary: Postal code (Zip code) of target address (우편 번호)
+  example: []
+  syntax:
+    content: public string PostalCode { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property PostalCode As String
+  overload: PostalCodeKR.Models.AddressPostalCodeData.PostalCode*
+- uid: PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress
+  commentId: P:PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress
+  id: RoadNumberAddress
+  parent: PostalCodeKR.Models.AddressPostalCodeData
+  langs:
+  - csharp
+  - vb
+  name: RoadNumberAddress
+  nameWithType: AddressPostalCodeData.RoadNumberAddress
+  fullName: PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress
+  type: Property
+  source:
+    remote:
+      path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: RoadNumberAddress
+    path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+    startLine: 15
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Models
+  summary: Road number address (도로명 주소)
+  example: []
+  syntax:
+    content: public string RoadNumberAddress { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property RoadNumberAddress As String
+  overload: PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress*
+- uid: PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress
+  commentId: P:PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress
+  id: LotNumberAddress
+  parent: PostalCodeKR.Models.AddressPostalCodeData
+  langs:
+  - csharp
+  - vb
+  name: LotNumberAddress
+  nameWithType: AddressPostalCodeData.LotNumberAddress
+  fullName: PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress
+  type: Property
+  source:
+    remote:
+      path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: LotNumberAddress
+    path: source/PostalCodeKR/Models/AddressPostalCodeData.cs
+    startLine: 20
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Models
+  summary: Lot number address (지번 주소)
+  example: []
+  syntax:
+    content: public string LotNumberAddress { get; init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LotNumberAddress As String
+  overload: PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress*
+references:
+- uid: PostalCodeKR.Models
+  commentId: N:PostalCodeKR.Models
+  href: PostalCodeKR.html
+  name: PostalCodeKR.Models
+  nameWithType: PostalCodeKR.Models
+  fullName: PostalCodeKR.Models
+  spec.csharp:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Models
+    name: Models
+    href: PostalCodeKR.Models.html
+  spec.vb:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Models
+    name: Models
+    href: PostalCodeKR.Models.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{PostalCodeKR.Models.AddressPostalCodeData}
+  commentId: T:System.IEquatable{PostalCodeKR.Models.AddressPostalCodeData}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AddressPostalCodeData>
+  nameWithType: IEquatable<AddressPostalCodeData>
+  fullName: System.IEquatable<PostalCodeKR.Models.AddressPostalCodeData>
+  nameWithType.vb: IEquatable(Of AddressPostalCodeData)
+  fullName.vb: System.IEquatable(Of PostalCodeKR.Models.AddressPostalCodeData)
+  name.vb: IEquatable(Of AddressPostalCodeData)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: PostalCodeKR.Models.AddressPostalCodeData
+    name: AddressPostalCodeData
+    href: PostalCodeKR.Models.AddressPostalCodeData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: PostalCodeKR.Models.AddressPostalCodeData
+    name: AddressPostalCodeData
+    href: PostalCodeKR.Models.AddressPostalCodeData.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: PostalCodeKR.Models.AddressPostalCodeData.PostalCode*
+  commentId: Overload:PostalCodeKR.Models.AddressPostalCodeData.PostalCode
+  href: PostalCodeKR.Models.AddressPostalCodeData.html#PostalCodeKR_Models_AddressPostalCodeData_PostalCode
+  name: PostalCode
+  nameWithType: AddressPostalCodeData.PostalCode
+  fullName: PostalCodeKR.Models.AddressPostalCodeData.PostalCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress*
+  commentId: Overload:PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress
+  href: PostalCodeKR.Models.AddressPostalCodeData.html#PostalCodeKR_Models_AddressPostalCodeData_RoadNumberAddress
+  name: RoadNumberAddress
+  nameWithType: AddressPostalCodeData.RoadNumberAddress
+  fullName: PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress
+- uid: PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress*
+  commentId: Overload:PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress
+  href: PostalCodeKR.Models.AddressPostalCodeData.html#PostalCodeKR_Models_AddressPostalCodeData_LotNumberAddress
+  name: LotNumberAddress
+  nameWithType: AddressPostalCodeData.LotNumberAddress
+  fullName: PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress

@@ -1,0 +1,449 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Constants.UrlConstant
+  commentId: T:PostalCodeKR.Constants.UrlConstant
+  id: UrlConstant
+  parent: PostalCodeKR.Constants
+  children:
+  - PostalCodeKR.Constants.UrlConstant.CountPerPageQueryPoint
+  - PostalCodeKR.Constants.UrlConstant.CurrentPageQueryPoint
+  - PostalCodeKR.Constants.UrlConstant.RequestUrl
+  - PostalCodeKR.Constants.UrlConstant.SearchKeywordQueryPoint
+  - PostalCodeKR.Constants.UrlConstant.ServiceKeyQueryPoint
+  langs:
+  - csharp
+  - vb
+  name: UrlConstant
+  nameWithType: UrlConstant
+  fullName: PostalCodeKR.Constants.UrlConstant
+  type: Class
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/UrlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: UrlConstant
+    path: source/PostalCodeKR/Constants/UrlConstant.cs
+    startLine: 2
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public class UrlConstant
+    content.vb: Public Class UrlConstant
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: PostalCodeKR.Constants.UrlConstant.RequestUrl
+  commentId: F:PostalCodeKR.Constants.UrlConstant.RequestUrl
+  id: RequestUrl
+  parent: PostalCodeKR.Constants.UrlConstant
+  langs:
+  - csharp
+  - vb
+  name: RequestUrl
+  nameWithType: UrlConstant.RequestUrl
+  fullName: PostalCodeKR.Constants.UrlConstant.RequestUrl
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/UrlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: RequestUrl
+    path: source/PostalCodeKR/Constants/UrlConstant.cs
+    startLine: 4
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string RequestUrl = "openapi.epost.go.kr/postal/retrieveNewAdressAreaCdSearchAllService/retrieveNewAdressAreaCdSearchAllService/getNewAddressListAreaCdSearchAll"
+    return:
+      type: System.String
+    content.vb: Public Const RequestUrl As String = "openapi.epost.go.kr/postal/retrieveNewAdressAreaCdSearchAllService/retrieveNewAdressAreaCdSearchAllService/getNewAddressListAreaCdSearchAll"
+- uid: PostalCodeKR.Constants.UrlConstant.ServiceKeyQueryPoint
+  commentId: F:PostalCodeKR.Constants.UrlConstant.ServiceKeyQueryPoint
+  id: ServiceKeyQueryPoint
+  parent: PostalCodeKR.Constants.UrlConstant
+  langs:
+  - csharp
+  - vb
+  name: ServiceKeyQueryPoint
+  nameWithType: UrlConstant.ServiceKeyQueryPoint
+  fullName: PostalCodeKR.Constants.UrlConstant.ServiceKeyQueryPoint
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/UrlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: ServiceKeyQueryPoint
+    path: source/PostalCodeKR/Constants/UrlConstant.cs
+    startLine: 5
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string ServiceKeyQueryPoint = "ServiceKey"
+    return:
+      type: System.String
+    content.vb: Public Const ServiceKeyQueryPoint As String = "ServiceKey"
+- uid: PostalCodeKR.Constants.UrlConstant.SearchKeywordQueryPoint
+  commentId: F:PostalCodeKR.Constants.UrlConstant.SearchKeywordQueryPoint
+  id: SearchKeywordQueryPoint
+  parent: PostalCodeKR.Constants.UrlConstant
+  langs:
+  - csharp
+  - vb
+  name: SearchKeywordQueryPoint
+  nameWithType: UrlConstant.SearchKeywordQueryPoint
+  fullName: PostalCodeKR.Constants.UrlConstant.SearchKeywordQueryPoint
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/UrlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: SearchKeywordQueryPoint
+    path: source/PostalCodeKR/Constants/UrlConstant.cs
+    startLine: 6
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string SearchKeywordQueryPoint = "srchwrd"
+    return:
+      type: System.String
+    content.vb: Public Const SearchKeywordQueryPoint As String = "srchwrd"
+- uid: PostalCodeKR.Constants.UrlConstant.CountPerPageQueryPoint
+  commentId: F:PostalCodeKR.Constants.UrlConstant.CountPerPageQueryPoint
+  id: CountPerPageQueryPoint
+  parent: PostalCodeKR.Constants.UrlConstant
+  langs:
+  - csharp
+  - vb
+  name: CountPerPageQueryPoint
+  nameWithType: UrlConstant.CountPerPageQueryPoint
+  fullName: PostalCodeKR.Constants.UrlConstant.CountPerPageQueryPoint
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/UrlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: CountPerPageQueryPoint
+    path: source/PostalCodeKR/Constants/UrlConstant.cs
+    startLine: 7
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string CountPerPageQueryPoint = "countPerPage"
+    return:
+      type: System.String
+    content.vb: Public Const CountPerPageQueryPoint As String = "countPerPage"
+- uid: PostalCodeKR.Constants.UrlConstant.CurrentPageQueryPoint
+  commentId: F:PostalCodeKR.Constants.UrlConstant.CurrentPageQueryPoint
+  id: CurrentPageQueryPoint
+  parent: PostalCodeKR.Constants.UrlConstant
+  langs:
+  - csharp
+  - vb
+  name: CurrentPageQueryPoint
+  nameWithType: UrlConstant.CurrentPageQueryPoint
+  fullName: PostalCodeKR.Constants.UrlConstant.CurrentPageQueryPoint
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/UrlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: CurrentPageQueryPoint
+    path: source/PostalCodeKR/Constants/UrlConstant.cs
+    startLine: 8
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string CurrentPageQueryPoint = "currentPage"
+    return:
+      type: System.String
+    content.vb: Public Const CurrentPageQueryPoint As String = "currentPage"
+references:
+- uid: PostalCodeKR.Constants
+  commentId: N:PostalCodeKR.Constants
+  href: PostalCodeKR.html
+  name: PostalCodeKR.Constants
+  nameWithType: PostalCodeKR.Constants
+  fullName: PostalCodeKR.Constants
+  spec.csharp:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Constants
+    name: Constants
+    href: PostalCodeKR.Constants.html
+  spec.vb:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Constants
+    name: Constants
+    href: PostalCodeKR.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

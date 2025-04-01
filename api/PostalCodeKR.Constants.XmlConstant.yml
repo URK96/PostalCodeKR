@@ -1,0 +1,589 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Constants.XmlConstant
+  commentId: T:PostalCodeKR.Constants.XmlConstant
+  id: XmlConstant
+  parent: PostalCodeKR.Constants
+  children:
+  - PostalCodeKR.Constants.XmlConstant.CommonDataNodeName
+  - PostalCodeKR.Constants.XmlConstant.CurrentPageNodeName
+  - PostalCodeKR.Constants.XmlConstant.ItemCountPerPageNodeName
+  - PostalCodeKR.Constants.XmlConstant.LotNumberAddressNodeName
+  - PostalCodeKR.Constants.XmlConstant.PostalCodeNodeName
+  - PostalCodeKR.Constants.XmlConstant.RoadNumberAddressNodeName
+  - PostalCodeKR.Constants.XmlConstant.SearchResultListNodeName
+  - PostalCodeKR.Constants.XmlConstant.SuccessYesNoNodeName
+  - PostalCodeKR.Constants.XmlConstant.TotalItemCountNodeName
+  - PostalCodeKR.Constants.XmlConstant.TotalPageCountNodeName
+  langs:
+  - csharp
+  - vb
+  name: XmlConstant
+  nameWithType: XmlConstant
+  fullName: PostalCodeKR.Constants.XmlConstant
+  type: Class
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: XmlConstant
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 2
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public class XmlConstant
+    content.vb: Public Class XmlConstant
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: PostalCodeKR.Constants.XmlConstant.CommonDataNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.CommonDataNodeName
+  id: CommonDataNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: CommonDataNodeName
+  nameWithType: XmlConstant.CommonDataNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.CommonDataNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: CommonDataNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 4
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string CommonDataNodeName = "cmmMsgHeader"
+    return:
+      type: System.String
+    content.vb: Public Const CommonDataNodeName As String = "cmmMsgHeader"
+- uid: PostalCodeKR.Constants.XmlConstant.SuccessYesNoNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.SuccessYesNoNodeName
+  id: SuccessYesNoNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: SuccessYesNoNodeName
+  nameWithType: XmlConstant.SuccessYesNoNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.SuccessYesNoNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: SuccessYesNoNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 5
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string SuccessYesNoNodeName = "successYN"
+    return:
+      type: System.String
+    content.vb: Public Const SuccessYesNoNodeName As String = "successYN"
+- uid: PostalCodeKR.Constants.XmlConstant.TotalItemCountNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.TotalItemCountNodeName
+  id: TotalItemCountNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: TotalItemCountNodeName
+  nameWithType: XmlConstant.TotalItemCountNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.TotalItemCountNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: TotalItemCountNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 6
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string TotalItemCountNodeName = "totalCount"
+    return:
+      type: System.String
+    content.vb: Public Const TotalItemCountNodeName As String = "totalCount"
+- uid: PostalCodeKR.Constants.XmlConstant.ItemCountPerPageNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.ItemCountPerPageNodeName
+  id: ItemCountPerPageNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: ItemCountPerPageNodeName
+  nameWithType: XmlConstant.ItemCountPerPageNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.ItemCountPerPageNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: ItemCountPerPageNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 7
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string ItemCountPerPageNodeName = "countPerPage"
+    return:
+      type: System.String
+    content.vb: Public Const ItemCountPerPageNodeName As String = "countPerPage"
+- uid: PostalCodeKR.Constants.XmlConstant.TotalPageCountNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.TotalPageCountNodeName
+  id: TotalPageCountNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: TotalPageCountNodeName
+  nameWithType: XmlConstant.TotalPageCountNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.TotalPageCountNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: TotalPageCountNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 8
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string TotalPageCountNodeName = "totalPage"
+    return:
+      type: System.String
+    content.vb: Public Const TotalPageCountNodeName As String = "totalPage"
+- uid: PostalCodeKR.Constants.XmlConstant.CurrentPageNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.CurrentPageNodeName
+  id: CurrentPageNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: CurrentPageNodeName
+  nameWithType: XmlConstant.CurrentPageNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.CurrentPageNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: CurrentPageNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 9
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string CurrentPageNodeName = "currentPage"
+    return:
+      type: System.String
+    content.vb: Public Const CurrentPageNodeName As String = "currentPage"
+- uid: PostalCodeKR.Constants.XmlConstant.SearchResultListNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.SearchResultListNodeName
+  id: SearchResultListNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: SearchResultListNodeName
+  nameWithType: XmlConstant.SearchResultListNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.SearchResultListNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: SearchResultListNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 10
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string SearchResultListNodeName = "newAddressListAreaCdSearchAll"
+    return:
+      type: System.String
+    content.vb: Public Const SearchResultListNodeName As String = "newAddressListAreaCdSearchAll"
+- uid: PostalCodeKR.Constants.XmlConstant.PostalCodeNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.PostalCodeNodeName
+  id: PostalCodeNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: PostalCodeNodeName
+  nameWithType: XmlConstant.PostalCodeNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.PostalCodeNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: PostalCodeNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 11
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string PostalCodeNodeName = "zipNo"
+    return:
+      type: System.String
+    content.vb: Public Const PostalCodeNodeName As String = "zipNo"
+- uid: PostalCodeKR.Constants.XmlConstant.RoadNumberAddressNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.RoadNumberAddressNodeName
+  id: RoadNumberAddressNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: RoadNumberAddressNodeName
+  nameWithType: XmlConstant.RoadNumberAddressNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.RoadNumberAddressNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: RoadNumberAddressNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 12
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string RoadNumberAddressNodeName = "lnmAdres"
+    return:
+      type: System.String
+    content.vb: Public Const RoadNumberAddressNodeName As String = "lnmAdres"
+- uid: PostalCodeKR.Constants.XmlConstant.LotNumberAddressNodeName
+  commentId: F:PostalCodeKR.Constants.XmlConstant.LotNumberAddressNodeName
+  id: LotNumberAddressNodeName
+  parent: PostalCodeKR.Constants.XmlConstant
+  langs:
+  - csharp
+  - vb
+  name: LotNumberAddressNodeName
+  nameWithType: XmlConstant.LotNumberAddressNodeName
+  fullName: PostalCodeKR.Constants.XmlConstant.LotNumberAddressNodeName
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Constants/XmlConstant.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: LotNumberAddressNodeName
+    path: source/PostalCodeKR/Constants/XmlConstant.cs
+    startLine: 13
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Constants
+  syntax:
+    content: public const string LotNumberAddressNodeName = "rnAdres"
+    return:
+      type: System.String
+    content.vb: Public Const LotNumberAddressNodeName As String = "rnAdres"
+references:
+- uid: PostalCodeKR.Constants
+  commentId: N:PostalCodeKR.Constants
+  href: PostalCodeKR.html
+  name: PostalCodeKR.Constants
+  nameWithType: PostalCodeKR.Constants
+  fullName: PostalCodeKR.Constants
+  spec.csharp:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Constants
+    name: Constants
+    href: PostalCodeKR.Constants.html
+  spec.vb:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Constants
+    name: Constants
+    href: PostalCodeKR.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

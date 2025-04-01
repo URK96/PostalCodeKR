@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Models
+  commentId: N:PostalCodeKR.Models
+  id: PostalCodeKR.Models
+  children:
+  - PostalCodeKR.Models.AddressPostalCodeData
+  - PostalCodeKR.Models.ServiceResponseData
+  langs:
+  - csharp
+  - vb
+  name: PostalCodeKR.Models
+  nameWithType: PostalCodeKR.Models
+  fullName: PostalCodeKR.Models
+  type: Namespace
+  assemblies:
+  - PostalCodeKR
+references:
+- uid: PostalCodeKR.Models.AddressPostalCodeData
+  commentId: T:PostalCodeKR.Models.AddressPostalCodeData
+  href: PostalCodeKR.Models.AddressPostalCodeData.html
+  name: AddressPostalCodeData
+  nameWithType: AddressPostalCodeData
+  fullName: PostalCodeKR.Models.AddressPostalCodeData
+- uid: PostalCodeKR.Models.ServiceResponseData
+  commentId: T:PostalCodeKR.Models.ServiceResponseData
+  href: PostalCodeKR.Models.ServiceResponseData.html
+  name: ServiceResponseData
+  nameWithType: ServiceResponseData
+  fullName: PostalCodeKR.Models.ServiceResponseData

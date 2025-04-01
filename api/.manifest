@@ -1,0 +1,19 @@
+{
+  "PostalCodeKR": "PostalCodeKR.yml",
+  "PostalCodeKR.Models": "PostalCodeKR.Models.yml",
+  "PostalCodeKR.Models.AddressPostalCodeData": "PostalCodeKR.Models.AddressPostalCodeData.yml",
+  "PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress": "PostalCodeKR.Models.AddressPostalCodeData.yml",
+  "PostalCodeKR.Models.AddressPostalCodeData.PostalCode": "PostalCodeKR.Models.AddressPostalCodeData.yml",
+  "PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress": "PostalCodeKR.Models.AddressPostalCodeData.yml",
+  "PostalCodeKR.Models.ServiceResponseData": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.CurrentPage": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.ItemCountPerPage": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.SearchResults": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.ServiceRequestSuccess": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.TotalItemCount": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.TotalPageCount": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.PostalCodeService": "PostalCodeKR.PostalCodeService.yml",
+  "PostalCodeKR.PostalCodeService.#ctor(System.String)": "PostalCodeKR.PostalCodeService.yml",
+  "PostalCodeKR.PostalCodeService.APIServiceKey": "PostalCodeKR.PostalCodeService.yml",
+  "PostalCodeKR.PostalCodeService.GetDatas(System.String,System.String,System.Int32,System.Int32)": "PostalCodeKR.PostalCodeService.yml"
+}
