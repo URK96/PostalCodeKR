@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/chlwl.URK96/source/repos/PostalCodeKR",
+  "source_base_path": "C:/Users/chlwl.URK96/source/repos/PostalCodeKR/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -9,16 +9,6 @@
           "relative_path": "index.json"
         }
       }
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "README.md",
-      "output": {
-        ".html": {
-          "relative_path": "README.html"
-        }
-      },
-      "version": ""
     },
     {
       "type": "ManagedReference",
@@ -74,7 +64,7 @@
       "Uid": null,
       "IsMRef": true,
       "Title": "PostalCodeKR.Models.AddressPostalCodeData",
-      "Summary": null
+      "Summary": "<p sourcefile=\"api/PostalCodeKR.Models.AddressPostalCodeData.yml\" sourcestartlinenumber=\"1\">Postal code (Zip code) and address information data record</p>\n"
     },
     {
       "type": "ManagedReference",

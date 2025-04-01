@@ -26,6 +26,8 @@ items:
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
+  summary: Postal code (Zip code) and address information data record
+  example: []
   syntax:
     content: 'public record AddressPostalCodeData : IEquatable<AddressPostalCodeData>'
     content.vb: Public Class AddressPostalCodeData Implements IEquatable(Of AddressPostalCodeData)

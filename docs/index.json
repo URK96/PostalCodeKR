@@ -1,9 +1,4 @@
 {
-  "README.html": {
-    "href": "README.html",
-    "title": "PostalCodeKR (한국 우편번호 / 주소 검색 라이브러리리) | PostalCodeKR API",
-    "summary": "PostalCodeKR (한국 우편번호 / 주소 검색 라이브러리리) Republic of Korea Postal code search library 대한민국의 우편번호 / 주소 검색 라이브러리 About Library (라이브러리에 대해) This library is C# implementation of 'Postal Number Information' open API service 본 라이브러리는 대한민국 공공데이터포털에서 제공하고 있는 '과학기술정보통신부 우정사업본부_우편번호 정보조회' 서비스의 C# 구현본입니다. Usage (사용법) Warning Get API key before use this library 라이브러리 사용 전 API Key를 가져와야 합니다. Use static method (정적 함수 사용시) Use PostalCodeSerivce.GetDatas async method PostalCodeService.GetDatas 비동기 함수를 사용하세요 ServiceResponseData result = await PostalCodeService.GetDatas(ServiceKey, \"관악구\", 10, 1);"
-  },
   "api/PostalCodeKR.Constants.UrlConstant.html": {
     "href": "api/PostalCodeKR.Constants.UrlConstant.html",
     "title": "Class UrlConstant | PostalCodeKR API",
@@ -22,7 +17,7 @@
   "api/PostalCodeKR.Models.AddressPostalCodeData.html": {
     "href": "api/PostalCodeKR.Models.AddressPostalCodeData.html",
     "title": "Class AddressPostalCodeData | PostalCodeKR API",
-    "summary": "Class AddressPostalCodeData Namespace PostalCodeKR.Models Assembly PostalCodeKR.dll public record AddressPostalCodeData : IEquatable<AddressPostalCodeData> Inheritance object AddressPostalCodeData Implements IEquatable<AddressPostalCodeData> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties LotNumberAddress Lot number address (지번 주소) public string LotNumberAddress { get; init; } Property Value string PostalCode Postal code (Zip code) of target address (우편 번호) public string PostalCode { get; init; } Property Value string RoadNumberAddress Road number address (도로명 주소) public string RoadNumberAddress { get; init; } Property Value string"
+    "summary": "Class AddressPostalCodeData Namespace PostalCodeKR.Models Assembly PostalCodeKR.dll Postal code (Zip code) and address information data record public record AddressPostalCodeData : IEquatable<AddressPostalCodeData> Inheritance object AddressPostalCodeData Implements IEquatable<AddressPostalCodeData> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties LotNumberAddress Lot number address (지번 주소) public string LotNumberAddress { get; init; } Property Value string PostalCode Postal code (Zip code) of target address (우편 번호) public string PostalCode { get; init; } Property Value string RoadNumberAddress Road number address (도로명 주소) public string RoadNumberAddress { get; init; } Property Value string"
   },
   "api/PostalCodeKR.Models.ServiceResponseData.html": {
     "href": "api/PostalCodeKR.Models.ServiceResponseData.html",
@@ -32,7 +27,7 @@
   "api/PostalCodeKR.Models.html": {
     "href": "api/PostalCodeKR.Models.html",
     "title": "Namespace PostalCodeKR.Models | PostalCodeKR API",
-    "summary": "Namespace PostalCodeKR.Models Classes AddressPostalCodeData ServiceResponseData Response data class about API service request"
+    "summary": "Namespace PostalCodeKR.Models Classes AddressPostalCodeData Postal code (Zip code) and address information data record ServiceResponseData Response data class about API service request"
   },
   "api/PostalCodeKR.PostalCodeService.html": {
     "href": "api/PostalCodeKR.PostalCodeService.html",
