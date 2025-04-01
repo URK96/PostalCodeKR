@@ -1,5 +1,8 @@
 namespace PostalCodeKR.Models;
 
+/// <summary>
+/// Postal code (Zip code) and address information data record
+/// </summary>
 public record AddressPostalCodeData
 {
     /// <summary>
