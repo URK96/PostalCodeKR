@@ -1,5 +1,10 @@
 {
   "PostalCodeKR": "PostalCodeKR.yml",
+  "PostalCodeKR.Enums": "PostalCodeKR.Enums.yml",
+  "PostalCodeKR.Enums.APIErrorType": "PostalCodeKR.Enums.APIErrorType.yml",
+  "PostalCodeKR.Enums.APIErrorType.NoError": "PostalCodeKR.Enums.APIErrorType.yml",
+  "PostalCodeKR.Enums.APIErrorType.ParseDataFail": "PostalCodeKR.Enums.APIErrorType.yml",
+  "PostalCodeKR.Enums.APIErrorType.RequestFail": "PostalCodeKR.Enums.APIErrorType.yml",
   "PostalCodeKR.Models": "PostalCodeKR.Models.yml",
   "PostalCodeKR.Models.AddressPostalCodeData": "PostalCodeKR.Models.AddressPostalCodeData.yml",
   "PostalCodeKR.Models.AddressPostalCodeData.LotNumberAddress": "PostalCodeKR.Models.AddressPostalCodeData.yml",
@@ -7,6 +12,7 @@
   "PostalCodeKR.Models.AddressPostalCodeData.RoadNumberAddress": "PostalCodeKR.Models.AddressPostalCodeData.yml",
   "PostalCodeKR.Models.ServiceResponseData": "PostalCodeKR.Models.ServiceResponseData.yml",
   "PostalCodeKR.Models.ServiceResponseData.CurrentPage": "PostalCodeKR.Models.ServiceResponseData.yml",
+  "PostalCodeKR.Models.ServiceResponseData.ErrorType": "PostalCodeKR.Models.ServiceResponseData.yml",
   "PostalCodeKR.Models.ServiceResponseData.ItemCountPerPage": "PostalCodeKR.Models.ServiceResponseData.yml",
   "PostalCodeKR.Models.ServiceResponseData.SearchResults": "PostalCodeKR.Models.ServiceResponseData.yml",
   "PostalCodeKR.Models.ServiceResponseData.ServiceRequestSuccess": "PostalCodeKR.Models.ServiceResponseData.yml",
@@ -15,5 +21,8 @@
   "PostalCodeKR.PostalCodeService": "PostalCodeKR.PostalCodeService.yml",
   "PostalCodeKR.PostalCodeService.#ctor(System.String)": "PostalCodeKR.PostalCodeService.yml",
   "PostalCodeKR.PostalCodeService.APIServiceKey": "PostalCodeKR.PostalCodeService.yml",
-  "PostalCodeKR.PostalCodeService.GetDatas(System.String,System.String,System.Int32,System.Int32)": "PostalCodeKR.PostalCodeService.yml"
+  "PostalCodeKR.PostalCodeService.GetDatas(System.String,System.String,System.Int32,System.Int32)": "PostalCodeKR.PostalCodeService.yml",
+  "PostalCodeKR.PostalCodeService.Search(System.Int32)": "PostalCodeKR.PostalCodeService.yml",
+  "PostalCodeKR.PostalCodeService.SearchItemCountPerPage": "PostalCodeKR.PostalCodeService.yml",
+  "PostalCodeKR.PostalCodeService.SearchKeyword": "PostalCodeKR.PostalCodeService.yml"
 }

@@ -115,6 +115,36 @@ references:
   commentId: F:PostalCodeKR.Constants.XmlConstant.TotalPageCountNodeName
   fullName: PostalCodeKR.Constants.XmlConstant.TotalPageCountNodeName
   nameWithType: XmlConstant.TotalPageCountNodeName
+- uid: PostalCodeKR.Enums
+  name: PostalCodeKR.Enums
+  href: api/PostalCodeKR.Enums.html
+  commentId: N:PostalCodeKR.Enums
+  fullName: PostalCodeKR.Enums
+  nameWithType: PostalCodeKR.Enums
+- uid: PostalCodeKR.Enums.APIErrorType
+  name: APIErrorType
+  href: api/PostalCodeKR.Enums.APIErrorType.html
+  commentId: T:PostalCodeKR.Enums.APIErrorType
+  fullName: PostalCodeKR.Enums.APIErrorType
+  nameWithType: APIErrorType
+- uid: PostalCodeKR.Enums.APIErrorType.NoError
+  name: NoError
+  href: api/PostalCodeKR.Enums.APIErrorType.html#PostalCodeKR_Enums_APIErrorType_NoError
+  commentId: F:PostalCodeKR.Enums.APIErrorType.NoError
+  fullName: PostalCodeKR.Enums.APIErrorType.NoError
+  nameWithType: APIErrorType.NoError
+- uid: PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  name: ParseDataFail
+  href: api/PostalCodeKR.Enums.APIErrorType.html#PostalCodeKR_Enums_APIErrorType_ParseDataFail
+  commentId: F:PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  fullName: PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  nameWithType: APIErrorType.ParseDataFail
+- uid: PostalCodeKR.Enums.APIErrorType.RequestFail
+  name: RequestFail
+  href: api/PostalCodeKR.Enums.APIErrorType.html#PostalCodeKR_Enums_APIErrorType_RequestFail
+  commentId: F:PostalCodeKR.Enums.APIErrorType.RequestFail
+  fullName: PostalCodeKR.Enums.APIErrorType.RequestFail
+  nameWithType: APIErrorType.RequestFail
 - uid: PostalCodeKR.Models
   name: PostalCodeKR.Models
   href: api/PostalCodeKR.Models.html
@@ -185,6 +215,19 @@ references:
   isSpec: "True"
   fullName: PostalCodeKR.Models.ServiceResponseData.CurrentPage
   nameWithType: ServiceResponseData.CurrentPage
+- uid: PostalCodeKR.Models.ServiceResponseData.ErrorType
+  name: ErrorType
+  href: api/PostalCodeKR.Models.ServiceResponseData.html#PostalCodeKR_Models_ServiceResponseData_ErrorType
+  commentId: P:PostalCodeKR.Models.ServiceResponseData.ErrorType
+  fullName: PostalCodeKR.Models.ServiceResponseData.ErrorType
+  nameWithType: ServiceResponseData.ErrorType
+- uid: PostalCodeKR.Models.ServiceResponseData.ErrorType*
+  name: ErrorType
+  href: api/PostalCodeKR.Models.ServiceResponseData.html#PostalCodeKR_Models_ServiceResponseData_ErrorType_
+  commentId: Overload:PostalCodeKR.Models.ServiceResponseData.ErrorType
+  isSpec: "True"
+  fullName: PostalCodeKR.Models.ServiceResponseData.ErrorType
+  nameWithType: ServiceResponseData.ErrorType
 - uid: PostalCodeKR.Models.ServiceResponseData.ItemCountPerPage
   name: ItemCountPerPage
   href: api/PostalCodeKR.Models.ServiceResponseData.html#PostalCodeKR_Models_ServiceResponseData_ItemCountPerPage
@@ -304,3 +347,45 @@ references:
   isSpec: "True"
   fullName: PostalCodeKR.PostalCodeService.GetDatas
   nameWithType: PostalCodeService.GetDatas
+- uid: PostalCodeKR.PostalCodeService.Search(System.Int32)
+  name: Search(int)
+  href: api/PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_Search_System_Int32_
+  commentId: M:PostalCodeKR.PostalCodeService.Search(System.Int32)
+  name.vb: Search(Integer)
+  fullName: PostalCodeKR.PostalCodeService.Search(int)
+  fullName.vb: PostalCodeKR.PostalCodeService.Search(Integer)
+  nameWithType: PostalCodeService.Search(int)
+  nameWithType.vb: PostalCodeService.Search(Integer)
+- uid: PostalCodeKR.PostalCodeService.Search*
+  name: Search
+  href: api/PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_Search_
+  commentId: Overload:PostalCodeKR.PostalCodeService.Search
+  isSpec: "True"
+  fullName: PostalCodeKR.PostalCodeService.Search
+  nameWithType: PostalCodeService.Search
+- uid: PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  name: SearchItemCountPerPage
+  href: api/PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_SearchItemCountPerPage
+  commentId: P:PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  fullName: PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  nameWithType: PostalCodeService.SearchItemCountPerPage
+- uid: PostalCodeKR.PostalCodeService.SearchItemCountPerPage*
+  name: SearchItemCountPerPage
+  href: api/PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_SearchItemCountPerPage_
+  commentId: Overload:PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  isSpec: "True"
+  fullName: PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  nameWithType: PostalCodeService.SearchItemCountPerPage
+- uid: PostalCodeKR.PostalCodeService.SearchKeyword
+  name: SearchKeyword
+  href: api/PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_SearchKeyword
+  commentId: P:PostalCodeKR.PostalCodeService.SearchKeyword
+  fullName: PostalCodeKR.PostalCodeService.SearchKeyword
+  nameWithType: PostalCodeService.SearchKeyword
+- uid: PostalCodeKR.PostalCodeService.SearchKeyword*
+  name: SearchKeyword
+  href: api/PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_SearchKeyword_
+  commentId: Overload:PostalCodeKR.PostalCodeService.SearchKeyword
+  isSpec: "True"
+  fullName: PostalCodeKR.PostalCodeService.SearchKeyword
+  nameWithType: PostalCodeService.SearchKeyword

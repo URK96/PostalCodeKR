@@ -7,6 +7,13 @@ items:
   - uid: PostalCodeKR.PostalCodeService
     name: PostalCodeService
     type: Class
+- uid: PostalCodeKR.Enums
+  name: PostalCodeKR.Enums
+  type: Namespace
+  items:
+  - uid: PostalCodeKR.Enums.APIErrorType
+    name: APIErrorType
+    type: Enum
 - uid: PostalCodeKR.Models
   name: PostalCodeKR.Models
   type: Namespace

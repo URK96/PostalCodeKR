@@ -54,6 +54,34 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Enums.APIErrorType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Enums.APIErrorType.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Enums.APIErrorType",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/PostalCodeKR.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/PostalCodeKR.Enums.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "PostalCodeKR.Enums",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/PostalCodeKR.Models.AddressPostalCodeData.yml",
       "output": {
         ".html": {

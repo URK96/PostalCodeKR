@@ -1,0 +1,139 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Enums.APIErrorType
+  commentId: T:PostalCodeKR.Enums.APIErrorType
+  id: APIErrorType
+  parent: PostalCodeKR.Enums
+  children:
+  - PostalCodeKR.Enums.APIErrorType.NoError
+  - PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  - PostalCodeKR.Enums.APIErrorType.RequestFail
+  langs:
+  - csharp
+  - vb
+  name: APIErrorType
+  nameWithType: APIErrorType
+  fullName: PostalCodeKR.Enums.APIErrorType
+  type: Enum
+  source:
+    remote:
+      path: source/PostalCodeKR/Enums/ErrorType.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: APIErrorType
+    path: ../source/PostalCodeKR/Enums/ErrorType.cs
+    startLine: 2
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Enums
+  syntax:
+    content: public enum APIErrorType
+    content.vb: Public Enum APIErrorType
+- uid: PostalCodeKR.Enums.APIErrorType.NoError
+  commentId: F:PostalCodeKR.Enums.APIErrorType.NoError
+  id: NoError
+  parent: PostalCodeKR.Enums.APIErrorType
+  langs:
+  - csharp
+  - vb
+  name: NoError
+  nameWithType: APIErrorType.NoError
+  fullName: PostalCodeKR.Enums.APIErrorType.NoError
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Enums/ErrorType.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: NoError
+    path: ../source/PostalCodeKR/Enums/ErrorType.cs
+    startLine: 4
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Enums
+  syntax:
+    content: NoError = 0
+    return:
+      type: PostalCodeKR.Enums.APIErrorType
+- uid: PostalCodeKR.Enums.APIErrorType.RequestFail
+  commentId: F:PostalCodeKR.Enums.APIErrorType.RequestFail
+  id: RequestFail
+  parent: PostalCodeKR.Enums.APIErrorType
+  langs:
+  - csharp
+  - vb
+  name: RequestFail
+  nameWithType: APIErrorType.RequestFail
+  fullName: PostalCodeKR.Enums.APIErrorType.RequestFail
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Enums/ErrorType.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: RequestFail
+    path: ../source/PostalCodeKR/Enums/ErrorType.cs
+    startLine: 5
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Enums
+  syntax:
+    content: RequestFail = 1
+    return:
+      type: PostalCodeKR.Enums.APIErrorType
+- uid: PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  commentId: F:PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  id: ParseDataFail
+  parent: PostalCodeKR.Enums.APIErrorType
+  langs:
+  - csharp
+  - vb
+  name: ParseDataFail
+  nameWithType: APIErrorType.ParseDataFail
+  fullName: PostalCodeKR.Enums.APIErrorType.ParseDataFail
+  type: Field
+  source:
+    remote:
+      path: source/PostalCodeKR/Enums/ErrorType.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: ParseDataFail
+    path: ../source/PostalCodeKR/Enums/ErrorType.cs
+    startLine: 6
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Enums
+  syntax:
+    content: ParseDataFail = 2
+    return:
+      type: PostalCodeKR.Enums.APIErrorType
+references:
+- uid: PostalCodeKR.Enums
+  commentId: N:PostalCodeKR.Enums
+  href: PostalCodeKR.html
+  name: PostalCodeKR.Enums
+  nameWithType: PostalCodeKR.Enums
+  fullName: PostalCodeKR.Enums
+  spec.csharp:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Enums
+    name: Enums
+    href: PostalCodeKR.Enums.html
+  spec.vb:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Enums
+    name: Enums
+    href: PostalCodeKR.Enums.html
+- uid: PostalCodeKR.Enums.APIErrorType
+  commentId: T:PostalCodeKR.Enums.APIErrorType
+  parent: PostalCodeKR.Enums
+  href: PostalCodeKR.Enums.APIErrorType.html
+  name: APIErrorType
+  nameWithType: APIErrorType
+  fullName: PostalCodeKR.Enums.APIErrorType

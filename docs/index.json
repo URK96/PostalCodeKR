@@ -14,6 +14,16 @@
     "title": "Namespace PostalCodeKR.Constants | PostalCodeKR API",
     "summary": "Namespace PostalCodeKR.Constants Classes UrlConstant XmlConstant"
   },
+  "api/PostalCodeKR.Enums.APIErrorType.html": {
+    "href": "api/PostalCodeKR.Enums.APIErrorType.html",
+    "title": "Enum APIErrorType | PostalCodeKR API",
+    "summary": "Enum APIErrorType Namespace PostalCodeKR.Enums Assembly PostalCodeKR.dll public enum APIErrorType Fields NoError = 0 ParseDataFail = 2 RequestFail = 1"
+  },
+  "api/PostalCodeKR.Enums.html": {
+    "href": "api/PostalCodeKR.Enums.html",
+    "title": "Namespace PostalCodeKR.Enums | PostalCodeKR API",
+    "summary": "Namespace PostalCodeKR.Enums Enums APIErrorType"
+  },
   "api/PostalCodeKR.Models.AddressPostalCodeData.html": {
     "href": "api/PostalCodeKR.Models.AddressPostalCodeData.html",
     "title": "Class AddressPostalCodeData | PostalCodeKR API",
@@ -22,7 +32,7 @@
   "api/PostalCodeKR.Models.ServiceResponseData.html": {
     "href": "api/PostalCodeKR.Models.ServiceResponseData.html",
     "title": "Class ServiceResponseData | PostalCodeKR API",
-    "summary": "Class ServiceResponseData Namespace PostalCodeKR.Models Assembly PostalCodeKR.dll Response data class about API service request public record ServiceResponseData : IEquatable<ServiceResponseData> Inheritance object ServiceResponseData Implements IEquatable<ServiceResponseData> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties CurrentPage Current page number public int CurrentPage { get; init; } Property Value int ItemCountPerPage Requested item count per page public int ItemCountPerPage { get; init; } Property Value int SearchResults Search result list (read-only) public IReadOnlyList<AddressPostalCodeData> SearchResults { get; init; } Property Value IReadOnlyList<AddressPostalCodeData> ServiceRequestSuccess Success information of API service request process public bool ServiceRequestSuccess { get; init; } Property Value bool TotalItemCount All page total item count of search result public int TotalItemCount { get; init; } Property Value int TotalPageCount Total page count public int TotalPageCount { get; init; } Property Value int"
+    "summary": "Class ServiceResponseData Namespace PostalCodeKR.Models Assembly PostalCodeKR.dll Response data class about API service request public record ServiceResponseData : IEquatable<ServiceResponseData> Inheritance object ServiceResponseData Implements IEquatable<ServiceResponseData> Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Properties CurrentPage Current page number public int CurrentPage { get; init; } Property Value int ErrorType Error type of API service request process public APIErrorType ErrorType { get; init; } Property Value APIErrorType ItemCountPerPage Requested item count per page public int ItemCountPerPage { get; init; } Property Value int SearchResults Search result list (read-only) public IReadOnlyList<AddressPostalCodeData> SearchResults { get; init; } Property Value IReadOnlyList<AddressPostalCodeData> ServiceRequestSuccess Success information of API service request process public bool ServiceRequestSuccess { get; init; } Property Value bool TotalItemCount All page total item count of search result public int TotalItemCount { get; init; } Property Value int TotalPageCount Total page count public int TotalPageCount { get; init; } Property Value int"
   },
   "api/PostalCodeKR.Models.html": {
     "href": "api/PostalCodeKR.Models.html",
@@ -32,7 +42,7 @@
   "api/PostalCodeKR.PostalCodeService.html": {
     "href": "api/PostalCodeKR.PostalCodeService.html",
     "title": "Class PostalCodeService | PostalCodeKR API",
-    "summary": "Class PostalCodeService Namespace PostalCodeKR Assembly PostalCodeKR.dll public class PostalCodeService Inheritance object PostalCodeService Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors PostalCodeService(string) public PostalCodeService(string apiKey) Parameters apiKey string Properties APIServiceKey public string APIServiceKey { set; } Property Value string Methods GetDatas(string, string, int, int) public static Task<ServiceResponseData> GetDatas(string serviceKey, string searchKeyword, int queryItemCount, int queryPageNumber) Parameters serviceKey string searchKeyword string queryItemCount int queryPageNumber int Returns Task<ServiceResponseData>"
+    "summary": "Class PostalCodeService Namespace PostalCodeKR Assembly PostalCodeKR.dll public class PostalCodeService Inheritance object PostalCodeService Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors PostalCodeService(string) public PostalCodeService(string apiKey) Parameters apiKey string Properties APIServiceKey public string APIServiceKey { init; } Property Value string SearchItemCountPerPage public int SearchItemCountPerPage { init; } Property Value int SearchKeyword public string SearchKeyword { init; } Property Value string Methods GetDatas(string, string, int, int) public static Task<ServiceResponseData> GetDatas(string serviceKey, string searchKeyword, int queryItemCount, int queryPageNumber) Parameters serviceKey string searchKeyword string queryItemCount int queryPageNumber int Returns Task<ServiceResponseData> Search(int) public Task<ServiceResponseData> Search(int targetPageNumber) Parameters targetPageNumber int Returns Task<ServiceResponseData>"
   },
   "api/PostalCodeKR.html": {
     "href": "api/PostalCodeKR.html",

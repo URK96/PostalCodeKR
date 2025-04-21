@@ -6,6 +6,7 @@ items:
   parent: PostalCodeKR.Models
   children:
   - PostalCodeKR.Models.ServiceResponseData.CurrentPage
+  - PostalCodeKR.Models.ServiceResponseData.ErrorType
   - PostalCodeKR.Models.ServiceResponseData.ItemCountPerPage
   - PostalCodeKR.Models.ServiceResponseData.SearchResults
   - PostalCodeKR.Models.ServiceResponseData.ServiceRequestSuccess
@@ -24,8 +25,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: ServiceResponseData
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 5
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 7
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -63,8 +64,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: ServiceRequestSuccess
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 11
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 13
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -77,6 +78,37 @@ items:
       type: System.Boolean
     content.vb: Public Property ServiceRequestSuccess As Boolean
   overload: PostalCodeKR.Models.ServiceResponseData.ServiceRequestSuccess*
+- uid: PostalCodeKR.Models.ServiceResponseData.ErrorType
+  commentId: P:PostalCodeKR.Models.ServiceResponseData.ErrorType
+  id: ErrorType
+  parent: PostalCodeKR.Models.ServiceResponseData
+  langs:
+  - csharp
+  - vb
+  name: ErrorType
+  nameWithType: ServiceResponseData.ErrorType
+  fullName: PostalCodeKR.Models.ServiceResponseData.ErrorType
+  type: Property
+  source:
+    remote:
+      path: source/PostalCodeKR/Models/ServiceResponseData.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: ErrorType
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 18
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR.Models
+  summary: Error type of API service request process
+  example: []
+  syntax:
+    content: public APIErrorType ErrorType { get; init; }
+    parameters: []
+    return:
+      type: PostalCodeKR.Enums.APIErrorType
+    content.vb: Public Property ErrorType As APIErrorType
+  overload: PostalCodeKR.Models.ServiceResponseData.ErrorType*
 - uid: PostalCodeKR.Models.ServiceResponseData.TotalItemCount
   commentId: P:PostalCodeKR.Models.ServiceResponseData.TotalItemCount
   id: TotalItemCount
@@ -94,8 +126,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: TotalItemCount
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 16
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 23
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -125,8 +157,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: ItemCountPerPage
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 21
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 28
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -156,8 +188,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: TotalPageCount
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 26
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 33
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -187,8 +219,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: CurrentPage
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 31
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 38
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -218,8 +250,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: SearchResults
-    path: source/PostalCodeKR/Models/ServiceResponseData.cs
-    startLine: 36
+    path: ../source/PostalCodeKR/Models/ServiceResponseData.cs
+    startLine: 43
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR.Models
@@ -570,6 +602,41 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: PostalCodeKR.Models.ServiceResponseData.ErrorType*
+  commentId: Overload:PostalCodeKR.Models.ServiceResponseData.ErrorType
+  href: PostalCodeKR.Models.ServiceResponseData.html#PostalCodeKR_Models_ServiceResponseData_ErrorType
+  name: ErrorType
+  nameWithType: ServiceResponseData.ErrorType
+  fullName: PostalCodeKR.Models.ServiceResponseData.ErrorType
+- uid: PostalCodeKR.Enums.APIErrorType
+  commentId: T:PostalCodeKR.Enums.APIErrorType
+  parent: PostalCodeKR.Enums
+  href: PostalCodeKR.Enums.APIErrorType.html
+  name: APIErrorType
+  nameWithType: APIErrorType
+  fullName: PostalCodeKR.Enums.APIErrorType
+- uid: PostalCodeKR.Enums
+  commentId: N:PostalCodeKR.Enums
+  href: PostalCodeKR.html
+  name: PostalCodeKR.Enums
+  nameWithType: PostalCodeKR.Enums
+  fullName: PostalCodeKR.Enums
+  spec.csharp:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Enums
+    name: Enums
+    href: PostalCodeKR.Enums.html
+  spec.vb:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Enums
+    name: Enums
+    href: PostalCodeKR.Enums.html
 - uid: PostalCodeKR.Models.ServiceResponseData.TotalItemCount*
   commentId: Overload:PostalCodeKR.Models.ServiceResponseData.TotalItemCount
   href: PostalCodeKR.Models.ServiceResponseData.html#PostalCodeKR_Models_ServiceResponseData_TotalItemCount

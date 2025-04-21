@@ -8,6 +8,9 @@ items:
   - PostalCodeKR.PostalCodeService.#ctor(System.String)
   - PostalCodeKR.PostalCodeService.APIServiceKey
   - PostalCodeKR.PostalCodeService.GetDatas(System.String,System.String,System.Int32,System.Int32)
+  - PostalCodeKR.PostalCodeService.Search(System.Int32)
+  - PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  - PostalCodeKR.PostalCodeService.SearchKeyword
   langs:
   - csharp
   - vb
@@ -21,8 +24,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: PostalCodeService
-    path: source/PostalCodeKR/PostalCodeService.cs
-    startLine: 6
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 7
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR
@@ -56,18 +59,76 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: APIServiceKey
-    path: source/PostalCodeKR/PostalCodeService.cs
-    startLine: 12
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 14
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR
   syntax:
-    content: public string APIServiceKey { set; }
+    content: public string APIServiceKey { init; }
     parameters: []
     return:
       type: System.String
     content.vb: Public Property APIServiceKey As String
   overload: PostalCodeKR.PostalCodeService.APIServiceKey*
+- uid: PostalCodeKR.PostalCodeService.SearchKeyword
+  commentId: P:PostalCodeKR.PostalCodeService.SearchKeyword
+  id: SearchKeyword
+  parent: PostalCodeKR.PostalCodeService
+  langs:
+  - csharp
+  - vb
+  name: SearchKeyword
+  nameWithType: PostalCodeService.SearchKeyword
+  fullName: PostalCodeKR.PostalCodeService.SearchKeyword
+  type: Property
+  source:
+    remote:
+      path: source/PostalCodeKR/PostalCodeService.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: SearchKeyword
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 16
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR
+  syntax:
+    content: public string SearchKeyword { init; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SearchKeyword As String
+  overload: PostalCodeKR.PostalCodeService.SearchKeyword*
+- uid: PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  commentId: P:PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  id: SearchItemCountPerPage
+  parent: PostalCodeKR.PostalCodeService
+  langs:
+  - csharp
+  - vb
+  name: SearchItemCountPerPage
+  nameWithType: PostalCodeService.SearchItemCountPerPage
+  fullName: PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  type: Property
+  source:
+    remote:
+      path: source/PostalCodeKR/PostalCodeService.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: SearchItemCountPerPage
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 18
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR
+  syntax:
+    content: public int SearchItemCountPerPage { init; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property SearchItemCountPerPage As Integer
+  overload: PostalCodeKR.PostalCodeService.SearchItemCountPerPage*
 - uid: PostalCodeKR.PostalCodeService.#ctor(System.String)
   commentId: M:PostalCodeKR.PostalCodeService.#ctor(System.String)
   id: '#ctor(System.String)'
@@ -85,8 +146,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: .ctor
-    path: source/PostalCodeKR/PostalCodeService.cs
-    startLine: 14
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 25
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR
@@ -117,8 +178,8 @@ items:
       branch: main
       repo: https://github.com/URK96/PostalCodeKR.git
     id: GetDatas
-    path: source/PostalCodeKR/PostalCodeService.cs
-    startLine: 19
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 30
   assemblies:
   - PostalCodeKR
   namespace: PostalCodeKR
@@ -140,6 +201,40 @@ items:
   nameWithType.vb: PostalCodeService.GetDatas(String, String, Integer, Integer)
   fullName.vb: PostalCodeKR.PostalCodeService.GetDatas(String, String, Integer, Integer)
   name.vb: GetDatas(String, String, Integer, Integer)
+- uid: PostalCodeKR.PostalCodeService.Search(System.Int32)
+  commentId: M:PostalCodeKR.PostalCodeService.Search(System.Int32)
+  id: Search(System.Int32)
+  parent: PostalCodeKR.PostalCodeService
+  langs:
+  - csharp
+  - vb
+  name: Search(int)
+  nameWithType: PostalCodeService.Search(int)
+  fullName: PostalCodeKR.PostalCodeService.Search(int)
+  type: Method
+  source:
+    remote:
+      path: source/PostalCodeKR/PostalCodeService.cs
+      branch: main
+      repo: https://github.com/URK96/PostalCodeKR.git
+    id: Search
+    path: ../source/PostalCodeKR/PostalCodeService.cs
+    startLine: 59
+  assemblies:
+  - PostalCodeKR
+  namespace: PostalCodeKR
+  syntax:
+    content: public Task<ServiceResponseData> Search(int targetPageNumber)
+    parameters:
+    - id: targetPageNumber
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task{PostalCodeKR.Models.ServiceResponseData}
+    content.vb: Public Function Search(targetPageNumber As Integer) As Task(Of ServiceResponseData)
+  overload: PostalCodeKR.PostalCodeService.Search*
+  nameWithType.vb: PostalCodeService.Search(Integer)
+  fullName.vb: PostalCodeKR.PostalCodeService.Search(Integer)
+  name.vb: Search(Integer)
 references:
 - uid: PostalCodeKR
   commentId: N:PostalCodeKR
@@ -401,6 +496,29 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: PostalCodeKR.PostalCodeService.SearchKeyword*
+  commentId: Overload:PostalCodeKR.PostalCodeService.SearchKeyword
+  href: PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_SearchKeyword
+  name: SearchKeyword
+  nameWithType: PostalCodeService.SearchKeyword
+  fullName: PostalCodeKR.PostalCodeService.SearchKeyword
+- uid: PostalCodeKR.PostalCodeService.SearchItemCountPerPage*
+  commentId: Overload:PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+  href: PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_SearchItemCountPerPage
+  name: SearchItemCountPerPage
+  nameWithType: PostalCodeService.SearchItemCountPerPage
+  fullName: PostalCodeKR.PostalCodeService.SearchItemCountPerPage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: PostalCodeKR.PostalCodeService.#ctor*
   commentId: Overload:PostalCodeKR.PostalCodeService.#ctor
   href: PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService__ctor_System_String_
@@ -416,17 +534,6 @@ references:
   name: GetDatas
   nameWithType: PostalCodeService.GetDatas
   fullName: PostalCodeKR.PostalCodeService.GetDatas
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
 - uid: System.Threading.Tasks.Task{PostalCodeKR.Models.ServiceResponseData}
   commentId: T:System.Threading.Tasks.Task{PostalCodeKR.Models.ServiceResponseData}
   parent: System.Threading.Tasks
@@ -525,3 +632,9 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: PostalCodeKR.PostalCodeService.Search*
+  commentId: Overload:PostalCodeKR.PostalCodeService.Search
+  href: PostalCodeKR.PostalCodeService.html#PostalCodeKR_PostalCodeService_Search_System_Int32_
+  name: Search
+  nameWithType: PostalCodeService.Search
+  fullName: PostalCodeKR.PostalCodeService.Search

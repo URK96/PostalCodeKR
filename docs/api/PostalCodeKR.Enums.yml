@@ -1,0 +1,46 @@
+### YamlMime:ManagedReference
+items:
+- uid: PostalCodeKR.Enums
+  commentId: N:PostalCodeKR.Enums
+  id: PostalCodeKR.Enums
+  children:
+  - PostalCodeKR.Enums.APIErrorType
+  langs:
+  - csharp
+  - vb
+  name: PostalCodeKR.Enums
+  nameWithType: PostalCodeKR.Enums
+  fullName: PostalCodeKR.Enums
+  type: Namespace
+  assemblies:
+  - PostalCodeKR
+references:
+- uid: PostalCodeKR.Enums.APIErrorType
+  commentId: T:PostalCodeKR.Enums.APIErrorType
+  parent: PostalCodeKR.Enums
+  href: PostalCodeKR.Enums.APIErrorType.html
+  name: APIErrorType
+  nameWithType: APIErrorType
+  fullName: PostalCodeKR.Enums.APIErrorType
+- uid: PostalCodeKR.Enums
+  commentId: N:PostalCodeKR.Enums
+  href: PostalCodeKR.html
+  name: PostalCodeKR.Enums
+  nameWithType: PostalCodeKR.Enums
+  fullName: PostalCodeKR.Enums
+  spec.csharp:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Enums
+    name: Enums
+    href: PostalCodeKR.Enums.html
+  spec.vb:
+  - uid: PostalCodeKR
+    name: PostalCodeKR
+    href: PostalCodeKR.html
+  - name: .
+  - uid: PostalCodeKR.Enums
+    name: Enums
+    href: PostalCodeKR.Enums.html
