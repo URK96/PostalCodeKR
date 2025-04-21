@@ -1,5 +1,6 @@
 ﻿using System.Xml;
 using PostalCodeKR.Constants;
+using PostalCodeKR.Enums;
 using PostalCodeKR.Models;
 
 namespace PostalCodeKR;
@@ -8,25 +9,80 @@ public class PostalCodeService
 {
     private const int MaxItemCountPerPage = 50;
 
-    private string _searchKeyword = string.Empty;
+    private readonly HttpClient _client;
+    private int _currentPage = 0;
 
-    public string APIServiceKey { private get; set; }
+    public string APIServiceKey { private get; init; } = string.Empty;
 
-    public PostalCodeService(string apiKey)
+    public string SearchKeyword { private get; init; } = string.Empty;
+
+    public int SearchItemCountPerPage { private get; init; } = MaxItemCountPerPage;
+
+    private PostalCodeService()
+    {
+        _client = new HttpClient();
+    }
+
+    public PostalCodeService(string apiKey) : this()
     {
         APIServiceKey = apiKey;
     }
-
+    
     public static async Task<ServiceResponseData> GetDatas(string serviceKey, string searchKeyword, int queryItemCount, int queryPageNumber)
     {
-        using HttpClient client = new();
-        string requestUrl = $"http://{UrlConstant.RequestUrl}?{UrlConstant.ServiceKeyQueryPoint}={serviceKey}&{UrlConstant.SearchKeywordQueryPoint}={searchKeyword}&{UrlConstant.CountPerPageQueryPoint}={queryItemCount}&{UrlConstant.CurrentPageQueryPoint}={queryPageNumber}";
-        HttpRequestMessage requestMessage = new(HttpMethod.Get, requestUrl);
-        HttpResponseMessage responseMessage = await client.SendAsync(requestMessage);
-        string responseString = await responseMessage.Content.ReadAsStringAsync();
+        PostalCodeService service = new(serviceKey)
+        {
+            SearchKeyword = searchKeyword,
+            SearchItemCountPerPage = queryItemCount
+        };
+
+        service.SetCurrentPageNumber(queryPageNumber);
+
+        string responseString = await service.GetAPIResultString();
         ServiceResponseData responseData = ParseResponseData(responseString);
 
         return responseData;
+    }
+
+    internal void SetCurrentPageNumber(int pageNumber) =>
+        _currentPage = pageNumber;
+
+    private async Task<string> GetAPIResultString()
+    {
+        string requestUrl = $"http://{UrlConstant.RequestUrl}?{UrlConstant.ServiceKeyQueryPoint}={APIServiceKey}&{UrlConstant.SearchKeywordQueryPoint}={SearchKeyword}&{UrlConstant.CountPerPageQueryPoint}={SearchItemCountPerPage}&{UrlConstant.CurrentPageQueryPoint}={_currentPage}";
+        HttpRequestMessage requestMessage = new(HttpMethod.Get, requestUrl);
+        HttpResponseMessage responseMessage = await _client.SendAsync(requestMessage);
+        string responseString = await responseMessage.Content.ReadAsStringAsync();
+
+        return responseString;
+    }
+
+    public async Task<ServiceResponseData> Search(int targetPageNumber)
+    {
+        string responseString;
+        ServiceResponseData data;
+
+        _currentPage = targetPageNumber;
+
+        try
+        {
+            responseString = await GetAPIResultString();
+        }
+        catch (Exception)
+        {
+            return new ServiceResponseData(APIErrorType.RequestFail);
+        }
+
+        try
+        {
+            data = ParseResponseData(responseString);
+        }
+        catch (Exception)
+        {
+            return new ServiceResponseData(APIErrorType.ParseDataFail);
+        }
+
+        return data;
     }
 
     private static ServiceResponseData ParseResponseData(string responseString)
@@ -49,22 +105,30 @@ public class PostalCodeService
     private static ServiceResponseData ParseResponseCommonData(XmlDocument document)
     {
         ServiceResponseData responseData = new();
-        XmlNodeList itemNodes = document.GetElementsByTagName(XmlConstant.CommonDataNodeName);
 
-        if (itemNodes.Count > 0)
+        try
         {
-            XmlNode itemNode = itemNodes[0];
-            string successString = GetXmlInnerText(itemNode, XmlConstant.SuccessYesNoNodeName);
-            bool requestSuccess = successString.Equals("Y");
+            XmlNodeList itemNodes = document.GetElementsByTagName(XmlConstant.CommonDataNodeName);
 
-            responseData = responseData with
+            if (itemNodes.Count > 0)
             {
-                ServiceRequestSuccess = requestSuccess,
-                TotalItemCount = GetXmlInnerInteger(itemNode, XmlConstant.TotalItemCountNodeName),
-                ItemCountPerPage = GetXmlInnerInteger(itemNode, XmlConstant.ItemCountPerPageNodeName),
-                TotalPageCount = GetXmlInnerInteger(itemNode, XmlConstant.TotalPageCountNodeName),
-                CurrentPage = GetXmlInnerInteger(itemNode, XmlConstant.CurrentPageNodeName)
-            };
+                XmlNode itemNode = itemNodes[0];
+                string successString = GetXmlInnerText(itemNode, XmlConstant.SuccessYesNoNodeName);
+                bool requestSuccess = successString.Equals("Y");
+
+                responseData = responseData with
+                {
+                    ServiceRequestSuccess = requestSuccess,
+                    TotalItemCount = GetXmlInnerInteger(itemNode, XmlConstant.TotalItemCountNodeName),
+                    ItemCountPerPage = GetXmlInnerInteger(itemNode, XmlConstant.ItemCountPerPageNodeName),
+                    TotalPageCount = GetXmlInnerInteger(itemNode, XmlConstant.TotalPageCountNodeName),
+                    CurrentPage = GetXmlInnerInteger(itemNode, XmlConstant.CurrentPageNodeName)
+                };
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Cannot parse reponse common data", ex);
         }
 
         return responseData;
@@ -72,17 +136,25 @@ public class PostalCodeService
 
     private static List<AddressPostalCodeData> ParseResponseSearchResultData(XmlDocument document)
     {
-        XmlNodeList itemNodes = document.GetElementsByTagName(XmlConstant.SearchResultListNodeName);
         List<AddressPostalCodeData> resultDatas = new();
 
-        foreach (XmlNode itemNode in itemNodes)
+        try
         {
-            resultDatas.Add(new AddressPostalCodeData
+            XmlNodeList itemNodes = document.GetElementsByTagName(XmlConstant.SearchResultListNodeName);
+
+            foreach (XmlNode itemNode in itemNodes)
             {
-                PostalCode = GetXmlInnerText(itemNode, XmlConstant.PostalCodeNodeName),
-                RoadNumberAddress = GetXmlInnerText(itemNode, XmlConstant.RoadNumberAddressNodeName),
-                LotNumberAddress = GetXmlInnerText(itemNode, XmlConstant.LotNumberAddressNodeName)
-            });
+                resultDatas.Add(new AddressPostalCodeData
+                {
+                    PostalCode = GetXmlInnerText(itemNode, XmlConstant.PostalCodeNodeName),
+                    RoadNumberAddress = GetXmlInnerText(itemNode, XmlConstant.RoadNumberAddressNodeName),
+                    LotNumberAddress = GetXmlInnerText(itemNode, XmlConstant.LotNumberAddressNodeName)
+                });
+            }
+        }
+        catch (Exception ex)
+        {
+            throw new Exception("Cannot parse search result data", ex);
         }
 
         return resultDatas;
