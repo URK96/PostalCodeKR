@@ -26,6 +26,18 @@ This library is C# implementation of **'Postal Number Information'** open API se
 > ServiceResponseData result = await PostalCodeService.GetDatas(ServiceKey, "관악구", 10, 1);
 > ```
 
+> * Use service instance (서비스 객체 사용 시시)
+>
+> ```
+> PostalCodeService service = new(ServiceKey)
+> {
+>     SearchKeyword = "관악구",
+>     SearchItemCountPerPage = 20
+> };
+>
+> ServiceResponseData data = await service.Search(1);
+> ```
+
 ## Reference
 
 [Library Document](https://urk96.github.io/PostalCodeKR/docs/getting-started.html)
