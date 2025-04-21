@@ -1,3 +1,5 @@
+using PostalCodeKR.Enums;
+
 namespace PostalCodeKR.Models;
 
 /// <summary>
@@ -10,6 +12,11 @@ public record ServiceResponseData
     /// Success information of API service request process
     /// </summary>
     public bool ServiceRequestSuccess { get; init; }
+
+    /// <summary>
+    /// Error type of API service request process
+    /// </summary>
+    public APIErrorType ErrorType { get; init; } = APIErrorType.NoError;
 
     /// <summary>
     /// All page total item count of search result
@@ -35,4 +42,12 @@ public record ServiceResponseData
     /// Search result list (read-only)
     /// </summary>
     public IReadOnlyList<AddressPostalCodeData> SearchResults { get; init; }
+
+    internal ServiceResponseData() { }
+
+    internal ServiceResponseData(APIErrorType errorType)
+    {
+        ErrorType = errorType;
+        ServiceRequestSuccess = errorType is not APIErrorType.NoError;
+    }
 }
